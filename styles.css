@@ -55,7 +55,7 @@ h1 {
 
 .contact h2 {
     margin: 0;
-    color: #333;
+    color: #232323;
 }
 
 .contact-items {
@@ -65,21 +65,15 @@ h1 {
     gap: 10px;
     margin-top: 20px;
     text-align: left;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
     border-bottom: 3px solid #ddd;
 }
 
 .contact-item a {
-    color: #333;
+    color: #000000;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
-}
-
-.email-description {
-    font-size: 0.7em; /* Ajusta o tamanho da fonte para menor */
-    margin: 0 0 0 6px; /* Ajusta o espaçamento do texto adicional */
-    color: #333; /* Cor do texto adicional, se necessário */
 }
 
 .contact-item {
@@ -109,7 +103,7 @@ h1 {
 
 .portfolio h2 {
     margin-bottom: 20px;
-    color: #333;
+    color: #232323;
 }
 
 .gallery {
