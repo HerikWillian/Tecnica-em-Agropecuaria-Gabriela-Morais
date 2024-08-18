@@ -1,0 +1,127 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f1f1f1;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url('/imgs/bg-desktop-light.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem na área */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+}
+
+header {
+    background-color: #023e04;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo-left img,
+.logo-right img {
+    max-width: 100px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.8em;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.contact {
+    padding: 20px;
+    color: #000000; /* Cor do texto para garantir legibilidade, ajuste conforme necessário */
+    text-align: left;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo semitransparente para garantir que o texto fique legível sobre a imagem */
+}
+
+
+.contact h2 {
+    margin: 0;
+    color: #333;
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha os itens à esquerda */
+    gap: 10px;
+    margin-top: 20px;
+    text-align: left;
+    padding-bottom: 60px;
+}
+
+.contact-item a {
+    color: #333;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+}
+
+.email-description {
+    font-size: 0.7em; /* Ajusta o tamanho da fonte para menor */
+    margin: 0 0 0 6px; /* Ajusta o espaçamento do texto adicional */
+    color: #333; /* Cor do texto adicional, se necessário */
+}
+
+.contact-item {
+    font-size: 1.2em;
+}
+
+.contact-item .emoji {
+    margin-right: 8px;
+}
+
+
+.contact-item a:hover {
+    text-decoration: underline;
+}
+
+.portfolio {
+    padding: 20px;
+    color: #000000; /* Cor do texto para garantir legibilidade, ajuste conforme necessário */
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo semitransparente para garantir que o texto fique legível sobre a imagem */
+}
+
+.portfolio h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.gallery img {
+    max-width: calc(25% - 10px);
+    border-radius: 10px;
+    height: auto;
+}
+
+footer {
+    background-color: #002501;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+}
