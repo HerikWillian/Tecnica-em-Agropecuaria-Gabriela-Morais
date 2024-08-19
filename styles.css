@@ -1,4 +1,5 @@
-html, body {
+html,
+body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -10,10 +11,10 @@ html, body {
     min-height: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url('/imgs/bg-desktop-light.jpg'); /* Caminho para a imagem de fundo */
-    background-size: cover; /* Ajusta a imagem para cobrir toda a área */
-    background-position: center; /* Centraliza a imagem na área */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-image: url('/imgs/bg-desktop-light.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 header {
@@ -27,31 +28,48 @@ header {
 
 .header-logos {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
+}
+
+.title-and-flags {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    /* Para centralizar corretamente no espaço disponível */
 }
 
 .logo-left img,
 .logo-right img {
-    max-width: 100px;
+    width: 90px;
+    /* Mantém o tamanho original */
     height: auto;
+}
+
+.flag-left img,
+.flag-right img {
+    max-width: 40px;
+    /* Tamanho menor para as bandeiras */
+    height: auto;
+    margin: 0;
 }
 
 h1 {
     margin: 0;
     font-size: 1.8em;
     text-align: center;
-    flex-grow: 1;
+    padding: 0 10px;
+    /* Espaço mínimo ao redor do texto para garantir que as bandeiras fiquem próximas */
 }
 
 .contact {
     padding: 20px;
-    color: #000000; /* Cor do texto para garantir legibilidade, ajuste conforme necessário */
+    color: #000000;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo semitransparente para garantir que o texto fique legível sobre a imagem */
+    background-color: rgba(255, 255, 255, 0.5);
 }
-
 
 .contact h2 {
     margin: 0;
@@ -61,7 +79,7 @@ h1 {
 .contact-items {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Alinha os itens à esquerda */
+    align-items: flex-start;
     gap: 10px;
     margin-top: 20px;
     text-align: left;
@@ -88,17 +106,15 @@ h1 {
     border-bottom: 1px solid #ddd;
 }
 
-
 .contact-item a:hover {
     text-decoration: underline;
 }
 
-
 .portfolio {
     padding: 20px;
-    color: #000000; /* Cor do texto para garantir legibilidade, ajuste conforme necessário */
+    color: #000000;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5); /* Fundo semitransparente para garantir que o texto fique legível sobre a imagem */
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .portfolio h2 {
