@@ -72,19 +72,22 @@ h1 {
 }
 
 .contact h2 {
+    text-align: center;
     margin: 0;
     color: #232323;
 }
 
 .contact-items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row ;
     align-items: flex-start;
     gap: 10px;
     margin-top: 20px;
-    text-align: left;
-    padding-bottom: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
     border-bottom: 3px solid #ddd;
+    justify-content: space-around;
 }
 
 .contact-item a {
@@ -96,7 +99,7 @@ h1 {
 
 .contact-item {
     font-size: 1.2em;
-    border: 2px solid #ddd;
+    border: 2px solid #535353;
     padding-right: 10px;
     border-radius: 10px;
 }
@@ -109,6 +112,18 @@ h1 {
 .contact-item a:hover {
     text-decoration: underline;
 }
+
+.emoji svg {
+    width: 24px;
+    height: 24px;
+    color: #a0123f; /* Cor padrão do Instagram */
+    vertical-align: middle;
+}
+
+.feather {
+    color: #023e04;
+}
+
 
 .portfolio {
     padding: 20px;
@@ -126,12 +141,17 @@ h1 {
     display: flex;
     justify-content: space-around;
     gap: 10px;
+    padding-bottom: 50px;
 }
 
 .gallery img {
     max-width: calc(25% - 10px);
     border-radius: 10px;
     height: auto;
+}
+
+.sobre-mim h2 {
+    text-align: center;
 }
 
 footer {
