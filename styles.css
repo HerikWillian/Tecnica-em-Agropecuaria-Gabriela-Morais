@@ -68,7 +68,7 @@ h1 {
     padding: 20px;
     color: #000000;
     text-align: left;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .contact h2 {
@@ -86,15 +86,14 @@ h1 {
     text-align: center;
     padding-bottom: 50px;
     padding-top: 20px;
-    border-bottom: 3px solid #ddd;
     justify-content: space-around;
 }
 
 .contact-item a {
     color: #000000;
-    text-decoration: none;
     display: inline-flex;
     align-items: center;
+    text-decoration: underline;
 }
 
 .contact-item {
@@ -106,22 +105,8 @@ h1 {
 
 .contact-item .emoji {
     margin-right: 8px;
-    border-bottom: 1px solid #ddd;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-.emoji svg {
-    width: 24px;
-    height: 24px;
-    color: #a0123f; /* Cor padrão do Instagram */
+    font-size: 24px;
     vertical-align: middle;
-}
-
-.feather {
-    color: #023e04;
 }
 
 
@@ -129,7 +114,7 @@ h1 {
     padding: 20px;
     color: #000000;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.2);
 }
 
 .portfolio h2 {
@@ -150,8 +135,47 @@ h1 {
     height: auto;
 }
 
+.sobre-mim {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .sobre-mim h2 {
     text-align: center;
+    color: #232323;
+}
+
+.meus-aspectos {
+    display: flex;
+    flex-direction: row ;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-top: 20px;
+    justify-content: space-around;
+}
+
+.aspectos {
+    font-size: 1.2em;
+    border: 2px solid #535353;
+    padding-right: 10px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+.aspectos .emojis {
+    margin-right: 8px;
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.aspectos a {
+    color: #000000;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: underline;
 }
 
 footer {
