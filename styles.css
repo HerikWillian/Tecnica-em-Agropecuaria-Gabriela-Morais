@@ -34,14 +34,33 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+}
+
+.logo-left {
+    flex-shrink: 0;
+}
+
+.flag-left {
+    margin: 0 10px;
+    flex-shrink: 0;
 }
 
 .title-and-flags {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-grow: 1;
+    text-align: center;
+    flex-grow: 1; /* Permite que o título ocupe o espaço restante */
+}
+
+.logo-right {
+    flex-shrink: 0;
+}
+
+.flag-right {
+    margin: 0 10px;
+    flex-shrink: 0;
 }
 
 .logo-left img,
@@ -54,7 +73,6 @@ header {
 .flag-right img {
     max-width: 40px;
     height: auto;
-    margin: 0;
 }
 
 h1 {
@@ -319,6 +337,7 @@ footer {
 
     .title-and-flags {
         padding: 10px 0;
+        flex-direction: row; /* Assegura que o título e as bandeiras estejam em linha */
     }
 
     .logo-left img,
@@ -360,4 +379,3 @@ footer {
         justify-content: center;
     }
 }
-
